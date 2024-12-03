@@ -8,10 +8,6 @@
   --background-end-rgb: 31, 41, 55;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -19,18 +15,11 @@ body {
     rgb(var(--background-start-rgb)),
     rgb(var(--background-end-rgb))
   );
-  min-height: 100vh;
-}
-
-@layer base {
-  body {
-    @apply antialiased;
-  }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors;
+    @apply bg-primary hover:bg-primary-light text-white font-bold py-2 px-4 rounded transition-colors;
   }
   
   .section-title {
@@ -38,6 +27,6 @@ body {
   }
   
   .card {
-    @apply bg-gray-800 p-6 rounded-lg hover:bg-opacity-90 transition-colors;
+    @apply bg-secondary-light p-6 rounded-lg hover:bg-opacity-90 transition-colors;
   }
 } 
