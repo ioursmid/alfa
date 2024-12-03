@@ -11,7 +11,7 @@ const Header: React.FC = () => {
           <div className="flex items-center space-x-4">
             <div className="relative w-auto h-auto">
               <Image
-                src="/logo.png"
+                src="/alfa/logo.png"
                 alt="AlfaPrime Logo"
                 width={180}
                 height={60}
